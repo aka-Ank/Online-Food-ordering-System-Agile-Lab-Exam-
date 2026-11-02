@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<body>
+  <form id="login-form">
+    <input id="username" placeholder="Username" required>
+    <input id="password" type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+  <p id="message"></p>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const valid = username.value === "user" && password.value === "pass123";
+      message.textContent = valid ? "Login successful" : "Invalid username or password";
+    });
+  </script>
+</body>
+</html>
